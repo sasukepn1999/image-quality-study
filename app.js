@@ -1,4 +1,4 @@
-// Image quality study: guide (two examples), then every pair in random order with left/right shuffled.
+// Image quality study: guide (two examples), then per_participant random pairs of the pool, in random order with left/right shuffled.
 // Each image is rated on its own: quality 1-5 and artifacts Yes/No. Answers of each pair are sent to the sheet on "Next".
 const $ = (id) => document.getElementById(id);
 const participant = Math.random().toString(36).slice(2, 10);
@@ -90,7 +90,7 @@ function next() {
 }
 
 fetch("study.json").then((r) => r.json()).then((s) => {
-  pairs = shuffle(s.pairs.map((p) => shuffle([...p])));
+  pairs = shuffle(s.pairs.map((p) => shuffle([...p]))).slice(0, s.per_participant || s.pairs.length);
   for (const el of document.querySelectorAll(".npairs")) el.textContent = pairs.length;
   renderGuide(s.guide);
   $("to-guide").onclick = () => show("guide");
