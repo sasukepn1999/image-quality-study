@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Quality Study</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<section id="intro" class="page">
+  <h1>Image quality study</h1>
+  <p>Thank you for taking part. You will see <b><span class="npairs">20</span> pairs</b> of AI-generated images. It takes about 8&ndash;10 minutes.</p>
+  <p>Rate <b>each image on its own</b>, answering two questions:</p>
+  <ol>
+    <li><b>Visual quality</b>, from 1 (very poor) to 5 (excellent).</li>
+    <li><b>Visual artifacts</b>: does the image contain noticeable artifacts, such as distorted faces or bodies, broken or extra limbs and objects, noise, blotches or colour bands? Yes or No.</li>
+  </ol>
+  <p>There are no right or wrong answers. Click any image to see it at full size.</p>
+  <p class="note">Your answers are anonymous: we record only a random ID and your ratings.</p>
+  <button class="primary" id="to-guide">Start</button>
+</section>
+
+<section id="guide" class="page" hidden>
+  <h1>Two examples</h1>
+  <p>These two images show the ends of the scale. Use them as a reference for your own ratings.</p>
+  <div class="pair" id="guide-pair"></div>
+  <button class="primary" id="to-study">Start the study</button>
+</section>
+
+<section id="study" class="page" hidden>
+  <div class="progress"><div class="bar" id="bar"></div></div>
+  <p class="count" id="count"></p>
+  <p class="note hint">Click an image to enlarge it. Answer all four questions to continue.</p>
+  <div class="pair" id="pair"></div>
+  <button class="primary" id="next" disabled>Next</button>
+</section>
+
+<section id="done" class="page" hidden>
+  <h1>Thank you!</h1>
+  <p id="done-msg">Your answers have been recorded. You can close this page.</p>
+</section>
+
+</main>
+<div id="zoom" hidden><img alt="Full-size image"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

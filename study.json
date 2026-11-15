@@ -1,0 +1,96 @@
+{
+ "pairs": [
+  [
+   "img/1d05334597.jpg",
+   "img/d9103e7e0c.jpg"
+  ],
+  [
+   "img/89ad54575e.jpg",
+   "img/bd415ff82e.jpg"
+  ],
+  [
+   "img/b0f8ff508c.jpg",
+   "img/0e5fb7f3eb.jpg"
+  ],
+  [
+   "img/e066fcbc20.jpg",
+   "img/405171a10b.jpg"
+  ],
+  [
+   "img/7898f45940.jpg",
+   "img/4ab057647d.jpg"
+  ],
+  [
+   "img/000b3c04a4.jpg",
+   "img/628c536b23.jpg"
+  ],
+  [
+   "img/a21e31e67a.jpg",
+   "img/336aa3dcef.jpg"
+  ],
+  [
+   "img/499f2d77b5.jpg",
+   "img/5ddc04177f.jpg"
+  ],
+  [
+   "img/7754b4da13.jpg",
+   "img/cdd4d9c111.jpg"
+  ],
+  [
+   "img/1a0f5dc9bd.jpg",
+   "img/e9d49a4477.jpg"
+  ],
+  [
+   "img/1bf48f40b7.jpg",
+   "img/37fc7a7d00.jpg"
+  ],
+  [
+   "img/3da9068652.jpg",
+   "img/b6b86a53a8.jpg"
+  ],
+  [
+   "img/ef0aa27b3e.jpg",
+   "img/09239d724b.jpg"
+  ],
+  [
+   "img/eb78a1aa55.jpg",
+   "img/f38da60e51.jpg"
+  ],
+  [
+   "img/0380066b35.jpg",
+   "img/585cc53e4b.jpg"
+  ],
+  [
+   "img/c0642c3ed1.jpg",
+   "img/d2b71b76f9.jpg"
+  ],
+  [
+   "img/ea406bddd4.jpg",
+   "img/5fd793d774.jpg"
+  ],
+  [
+   "img/700e62735e.jpg",
+   "img/6f28c1f8f2.jpg"
+  ],
+  [
+   "img/59f833ba0c.jpg",
+   "img/cd9a10c730.jpg"
+  ],
+  [
+   "img/76bc3baca4.jpg",
+   "img/74b46498a0.jpg"
+  ]
+ ],
+ "guide": [
+  {
+   "src": "img/example_good.jpg",
+   "quality": 5,
+   "artifacts": "No"
+  },
+  {
+   "src": "img/example_bad.jpg",
+   "quality": 1,
+   "artifacts": "Yes"
+  }
+ ]
+}

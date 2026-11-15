@@ -1,0 +1,39 @@
+:root {
+  --bg: #fafaf8; --card: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #dcdbd6;
+  --accent: #2a63b8; --accent-ink: #ffffff; --sel: #e8eefa;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 1.6rem; margin: 0.2em 0 0.6em; }
+ol { padding-left: 1.3em; }
+li { margin-bottom: 0.4em; }
+.page { max-width: 1100px; }
+#intro, #done { max-width: 680px; margin: 0 auto; }
+
+button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; }
+button.primary { display: block; margin: 24px auto 0; padding: 10px 36px; background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+button.primary:disabled { opacity: 0.35; cursor: not-allowed; }
+
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 720px) { .pair { grid-template-columns: 1fr; } }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.card h2 { font-size: 1rem; margin: 0 0 8px; }
+.card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; cursor: zoom-in; display: block; background: #eee; }
+.q { margin-top: 12px; }
+.q-label { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+.opts { display: flex; gap: 6px; }
+.opts button { flex: 1; padding: 10px 0; min-height: 44px; }
+.opts button.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.opts button:disabled { cursor: default; }
+.ends { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+.note { font-size: 0.9rem; color: var(--muted); margin: 10px 0 0; }
+
+.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar { height: 100%; width: 0; background: var(--accent); transition: width 0.2s; }
+.count { color: var(--muted); font-size: 0.9rem; margin: 6px 0 2px; }
+.hint { margin: 0 0 12px; }
+
+#zoom { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.88); display: flex; align-items: center; justify-content: center; cursor: zoom-out; z-index: 10; }
+#zoom[hidden] { display: none; }
+#zoom img { max-width: 96vw; max-height: 96vh; }
